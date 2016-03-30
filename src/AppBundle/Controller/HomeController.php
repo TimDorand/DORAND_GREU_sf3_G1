@@ -17,11 +17,20 @@ class HomeController extends Controller
         $name = 'Symfony 3';
 
         $tutorials = [
-            'Php POO',
-            'Laravel',
-            'Symfony3',
-            'Wordpress',
+            [
+                'id' => 2,
+                'name' => 'Symfony2'
+            ],
+            [
+                'id' => 5,
+                'name' => 'Wordpress'
+            ],
+            [
+                'id' => 9,
+                'name' => 'Laravel'
+            ],
         ];
+
 
         return $this->render('AppBundle:Home:index.html.twig', [
             'name' => $name,

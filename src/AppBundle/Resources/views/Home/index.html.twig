@@ -9,12 +9,6 @@
 
 <h1>cours de {{ name }}</h1>
 
-<p>list of tutorials</p>
-<ul>
-    {% for tutorial in tutorials %}
-       <li>{{ tutorial }}</li>
-    {% endfor %}
-
-</ul>
+{% include("AppBundle:Article/Partial:list.html.twig") %}
 
 {% endblock %}
