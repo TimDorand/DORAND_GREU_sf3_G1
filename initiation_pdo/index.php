@@ -17,9 +17,9 @@ $player
 echo '<html style="background:rgba(8, 16, 22, 0.6); width:90%; margin:auto;">';
 echo '<h1 style="font-size:5em;font-family:Lato;font-weight:100;color:rgb(255, 255, 255);"><span style="font-size:5em">Player</span><br/><b>Vie: </b>' .$player->getLife().'<br/>';
 echo '<b>Nom: </b>'.$player->getName().'<br/>';
-echo '<b>Stamina: </b>'.$player->getStamina().'<br/>
+echo '<b>Stamina: </b>'.$player->getStamina(). '<br/>
 
-    <a href="td_symfony">LE TD</a><br/>';
+    <a href="../td_symfony">LE TD</a><br/>';
 
 
 $voiture = new Voiture();

@@ -1,9 +1,4 @@
-# DORAND_GREU_sf3_G1
-TD Symfony sermaine du 29 mars
+td_symfony
+==========
 
-_______
-
-Auteurs:
-
-Melissa GREU
-Timothée DORAND
+A Symfony project created on March 29, 2016, 8:33 am.
