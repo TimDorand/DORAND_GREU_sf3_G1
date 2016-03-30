@@ -16,3 +16,6 @@
 /web/bundles/
 composer.phar
 .idea/*
+.idea/workspace.xml
+.idea/DORAND_GREU_sf3_G1.iml
+
