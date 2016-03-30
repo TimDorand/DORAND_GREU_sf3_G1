@@ -1,0 +1,9 @@
+body{
+    background:rgba(8, 16, 22, 0.6);
+    width:90%;
+    margin:auto;
+    font-size:2em;
+    font-family:Lato;
+    font-weight:100;
+    color:rgb(255, 255, 255);
+}

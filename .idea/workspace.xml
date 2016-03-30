@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="086bd987-b0f3-4d61-b639-6f14acaafc8f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/views/Home/index.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Home/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/css/home/home.css" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/css/home/home.css" />
     </list>
     <ignored path="DORAND_GREU_sf3_G1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,9 +36,14 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/initiation_pdo/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-              <folding />
+            <state relative-caret-position="210">
+              <caret line="17" column="89" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="89" />
+              <folding>
+                <marker date="1459320079000" expanded="true" signature="207:263" placeholder="..." />
+                <marker date="1459320079000" expanded="true" signature="285:357" placeholder="..." />
+                <marker date="1459320079000" expanded="true" signature="372:385" placeholder="..." />
+                <marker date="1459320079000" expanded="true" signature="737:750" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,11 +70,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+            <state relative-caret-position="105">
+              <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/public/css/home/home.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -129,6 +145,7 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/HomeController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Home/index.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/public/css/home/home.css" />
       </list>
     </option>
   </component>
@@ -256,14 +273,6 @@
               <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Home" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -286,26 +295,16 @@
               <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DORAND_GREU_sf3_G1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DORAND_GREU_sf3_G1" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
+              <option name="myItemId" value="home" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -319,19 +318,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Article" />
+              <option name="myItemId" value="initiation_pdo" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -460,12 +447,12 @@
       <workItem from="1459321079723" duration="43000" />
       <workItem from="1459321133517" duration="3932000" />
       <workItem from="1459327825456" duration="917000" />
-      <workItem from="1459328935293" duration="3221000" />
+      <workItem from="1459328935293" duration="3628000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8246000" />
+    <option name="totallyTimeSpent" value="8653000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
@@ -511,7 +498,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding />
+          <folding>
+            <marker date="1459320079000" expanded="true" signature="207:263" placeholder="..." />
+            <marker date="1459320079000" expanded="true" signature="285:357" placeholder="..." />
+            <marker date="1459320079000" expanded="true" signature="372:385" placeholder="..." />
+            <marker date="1459320079000" expanded="true" signature="737:750" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -561,7 +553,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding />
+          <folding>
+            <marker date="1459320079000" expanded="true" signature="207:263" placeholder="..." />
+            <marker date="1459320079000" expanded="true" signature="285:357" placeholder="..." />
+            <marker date="1459320079000" expanded="true" signature="372:385" placeholder="..." />
+            <marker date="1459320079000" expanded="true" signature="737:750" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -611,7 +608,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding />
+          <folding>
+            <marker date="1459320079000" expanded="true" signature="207:263" placeholder="..." />
+            <marker date="1459320079000" expanded="true" signature="285:357" placeholder="..." />
+            <marker date="1459320079000" expanded="true" signature="372:385" placeholder="..." />
+            <marker date="1459320079000" expanded="true" signature="737:750" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -629,7 +631,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1459320079000" expanded="true" signature="207:263" placeholder="..." />
+            <marker date="1459320079000" expanded="true" signature="285:357" placeholder="..." />
+            <marker date="1459320079000" expanded="true" signature="372:385" placeholder="..." />
+            <marker date="1459320079000" expanded="true" signature="737:750" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -637,7 +644,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding />
+          <folding>
+            <marker date="1459320079000" expanded="true" signature="207:263" placeholder="..." />
+            <marker date="1459320079000" expanded="true" signature="285:357" placeholder="..." />
+            <marker date="1459320079000" expanded="true" signature="372:385" placeholder="..." />
+            <marker date="1459320079000" expanded="true" signature="737:750" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -655,7 +667,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding />
+          <folding>
+            <marker date="1459320079000" expanded="true" signature="207:263" placeholder="..." />
+            <marker date="1459320079000" expanded="true" signature="285:357" placeholder="..." />
+            <marker date="1459320079000" expanded="true" signature="372:385" placeholder="..." />
+            <marker date="1459320079000" expanded="true" signature="737:750" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -670,14 +687,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="file://$PROJECT_DIR$/initiation_pdo/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -728,10 +737,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/initiation_pdo/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="89" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="89" />
+          <folding>
+            <marker date="1459320079000" expanded="true" signature="207:263" placeholder="..." />
+            <marker date="1459320079000" expanded="true" signature="285:357" placeholder="..." />
+            <marker date="1459320079000" expanded="true" signature="372:385" placeholder="..." />
+            <marker date="1459320079000" expanded="true" signature="737:750" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        <state relative-caret-position="105">
+          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/public/css/home/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding />
         </state>
       </provider>
