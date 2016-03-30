@@ -14,6 +14,10 @@ class HomeController extends Controller
      */
     public function indexAction()
     {
-        return new Response('Hellow Woorld !');
+        $name = 'Symfony 3';
+
+        return $this->render('AppBundle:Home:index.html.twig', [
+            'name' => $name,
+        ]);
     }
 }
