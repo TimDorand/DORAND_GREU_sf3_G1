@@ -1,1 +1,9 @@
 <p>cours de {{ name }}</p>
+
+<p>list of tutorials</p>
+<ul>
+    {% for tutorial in tutorials %}
+       <li>{{ tutorial }}</li>
+    {% endfor %}
+
+</ul>
