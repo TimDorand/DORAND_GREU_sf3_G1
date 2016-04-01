@@ -1,4 +1,4 @@
 services:
     antispam:
         class: AppBundle\Antispam\Antispam
-        arguments: ["%antispam_lenght%"]
+        arguments: ["%antispam_length%"]
