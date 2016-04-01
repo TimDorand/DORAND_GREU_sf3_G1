@@ -15,9 +15,9 @@ class HomeController extends Controller
      */
     public function indexAction()
     {
-        $antispam = $this->get('Antispam');
-      /*  
-        dump($antispam->isSpam('dedededee')); die;
+//        $antispam = $this->get('Antispam');
+        
+       /* dump($antispam->isSpam('dedededee')); die;
         
         
         $name = 'Symfony 3';
@@ -35,32 +35,31 @@ class HomeController extends Controller
                 'id' => 9,
                 'name' => 'Laravel'
             ],
-        ];
+        ];*/
 
 
-        return $this->render('AppBundle:Home:index.html.twig', [
+        /*return $this->render('AppBundle:Home:index.html.twig', [
             'name' => $name,
             'tutorials' => $tutorials,
         ]);
         */
+        
+/*
+        $articles = $articleRepository->findAll();
+
+        dump($articles); die;*/
+        
+//        return new Response('Article created');
+
+
+
         $em = $this->getDoctrine()->getManager();
         $articleRepository = $em->getRepository('AppBundle:Article\Article');
-        
-        $article = new Article();
-        $article 
-            ->setTitle('Osef du titre')
-            ->setContent('Blabla')
-            ->setTag('Bla')
-            ->setCreatedAt(new \DateTime())
-        ;
 
-        
-        $em->persist($article);
-        // Persiste sert à mettre en mémoire
-        $em->flush();
-        // Flush va mettre en base 
-        
-        return new Response('Article created');
-        
+        $articles = $articleRepository->findAll();
+        return $this->render('AppBundle:Home:index.html.twig',[
+            'articles' => $articles,
+        ]);
+
     }
 }

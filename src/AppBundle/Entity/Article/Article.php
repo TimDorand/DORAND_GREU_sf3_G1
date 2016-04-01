@@ -1,9 +1,6 @@
 <?php
-
 namespace AppBundle\Entity\Article;
-
 use Doctrine\ORM\Mapping as ORM;
-
 /**
  * Article
  *
@@ -20,43 +17,42 @@ class Article
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
-
     /**
      * @var string
      *
      * @ORM\Column(name="title", type="string", length=255)
      */
     private $title;
-
     /**
      * @var string
      *
      * @ORM\Column(name="content", type="text")
      */
     private $content;
-
     /**
      * @var string
      *
-     * @ORM\Column(name="author", type="string", length=255)
+     * @ORM\Column(name="author", type="string", length=255, nullable=true)
      */
     private $author;
-
     /**
      * @var string
      *
      * @ORM\Column(name="tag", type="string", length=255, nullable=true)
      */
     private $tag;
-
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="createAd", type="datetime", nullable=true)
+     * @ORM\Column(name="createdAt", type="datetime")
      */
-    private $createAd;
-
-
+    private $createdAt;
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="updatedAt", type="datetime", nullable=true)
+     */
+    private $updatedAt;
     /**
      * Get id
      *
@@ -66,7 +62,6 @@ class Article
     {
         return $this->id;
     }
-
     /**
      * Set title
      *
@@ -77,10 +72,8 @@ class Article
     public function setTitle($title)
     {
         $this->title = $title;
-
         return $this;
     }
-
     /**
      * Get title
      *
@@ -90,7 +83,6 @@ class Article
     {
         return $this->title;
     }
-
     /**
      * Set content
      *
@@ -101,10 +93,8 @@ class Article
     public function setContent($content)
     {
         $this->content = $content;
-
         return $this;
     }
-
     /**
      * Get content
      *
@@ -114,7 +104,6 @@ class Article
     {
         return $this->content;
     }
-
     /**
      * Set author
      *
@@ -125,10 +114,8 @@ class Article
     public function setAuthor($author)
     {
         $this->author = $author;
-
         return $this;
     }
-
     /**
      * Get author
      *
@@ -138,7 +125,6 @@ class Article
     {
         return $this->author;
     }
-
     /**
      * Set tag
      *
@@ -149,10 +135,8 @@ class Article
     public function setTag($tag)
     {
         $this->tag = $tag;
-
         return $this;
     }
-
     /**
      * Get tag
      *
@@ -162,29 +146,46 @@ class Article
     {
         return $this->tag;
     }
-
     /**
-     * Set createAd
+     * Set createdAt
      *
-     * @param \DateTime $createAd
+     * @param \DateTime $createdAt
      *
      * @return Article
      */
-    public function setCreateAd($createAd)
+    public function setCreatedAt($createdAt)
     {
-        $this->createAd = $createAd;
-
+        $this->createdAt = $createdAt;
         return $this;
     }
-
     /**
-     * Get createAd
+     * Get createdAt
      *
      * @return \DateTime
      */
-    public function getCreateAd()
+    public function getCreatedAt()
     {
-        return $this->createAd;
+        return $this->createdAt;
+    }
+    /**
+     * Set updatedAt
+     *
+     * @param \DateTime $updatedAt
+     *
+     * @return Article
+     */
+    public function setUpdatedAt($updatedAt)
+    {
+        $this->updatedAt = $updatedAt;
+        return $this;
+    }
+    /**
+     * Get updatedAt
+     *
+     * @return \DateTime
+     */
+    public function getUpdatedAt()
+    {
+        return $this->updatedAt;
     }
 }
-
