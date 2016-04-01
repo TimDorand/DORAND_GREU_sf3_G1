@@ -14,6 +14,11 @@ class HomeController extends Controller
      */
     public function indexAction()
     {
+        $antispam = $this->get('Antispam');
+        
+//        dump($antispam->isSpam('dedededee')); die;
+        
+        
         $name = 'Symfony 3';
 
         $tutorials = [
