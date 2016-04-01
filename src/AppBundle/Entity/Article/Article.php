@@ -53,6 +53,11 @@ class Article
      * @ORM\Column(name="updatedAt", type="datetime", nullable=true)
      */
     private $updatedAt;
+
+    public function __construct()
+    {
+        $this->createdAt = new \DateTime();
+    }
     /**
      * Get id
      *

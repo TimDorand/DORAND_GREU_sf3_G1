@@ -1,6 +1,7 @@
 <?php
 namespace AppBundle\Controller\Article;
 use AppBundle\Entity\Article\Article;
+use AppBundle\Form\Article\ArticleType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -35,35 +36,46 @@ class ArticleController extends Controller
             'author' => $author
         ]);
 
-        dump($articles);
+//        dump($articles);
 
         return new Response('List of article');
     }
     
     /**
-    * @Route("/new")
+    * @Route("/new", name="article_new")
      */
     
-    public function newAction()
+    public function newAction(Request $request)
     {
-        $em = $this->getDoctrine()->getManager();
+        $form = $this->createForm(ArticleType::class);
+        $form->handleRequest($request);
+
+//        $em = $this->getDoctrine()->getManager();
 //        $articleRepository = $em->getRepository('AppBundle:Article\Article');
 
-        $article = new Article();
+       /* $article = new Article();
         $article
             ->setTitle('Osef du titre')
             ->setContent('Blabla')
             ->setTag('Bla')
             ->setCreatedAt(new \DateTime())
-        ;
+        ;*/
 
+        if($form->isValid()){
+//            dump($form->getData());die;
+            $em = $this->getDoctrine()->getManager();
 
-        $em->persist($article);
-        // Persiste sert à mettre en mémoire
-        $em->flush();
-        // Flush va mettre en base
+            $em->persist($form->getData());
+            // Persiste sert à mettre en mémoire
+            $em->flush();
+            // Flush va mettre en base
+            
+            return $this->redirectToRoute('article_list');
+        }
 
-        return new Response('Article created');
+        return $this->render('AppBundle:Article:new.html.twig', [
+            'form' => $form->createView(),
+        ]);
         
     }
 }
