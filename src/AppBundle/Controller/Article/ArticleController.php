@@ -6,6 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+
 class ArticleController extends Controller
 {
     /**
@@ -19,6 +20,14 @@ class ArticleController extends Controller
     {
         $tag = $request->query->get('tag');
         return new Response('Article avec l\'id '.$id.' avec le tag: '.$tag);
+
+        $em = $this->getDoctrine()->getManager();
+        $articleRepository = $em->getRepository('AppBundle:Article\Article');
+
+        $articles = $articleRepository->findAll();
+        return $this->render('AppBundle:Home:index.html.twig',[
+            'tag' => $tag,
+        ]);
     }
     
     
@@ -32,13 +41,20 @@ class ArticleController extends Controller
 
         $author = 'moi';
 
-        $articles = $articleRepository->findBy([
+
+        /*$articles = $articleRepository->findBy([
             'author' => $author
+        ]);
+        */
+
+        $articles = $articleRepository->findAll();
+        return $this->render('AppBundle:Home:index.html.twig',[
+            'articles' => $articles,
         ]);
 
 //        dump($articles);
 
-        return new Response('List of article');
+//        return new Response('List of article');
     }
     
     /**
